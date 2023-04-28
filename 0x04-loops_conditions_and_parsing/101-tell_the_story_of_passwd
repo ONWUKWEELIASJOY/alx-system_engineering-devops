@@ -1,0 +1,13 @@
+# a script that tells a story based on the contents of the `/etc/passwd`
+
+
+IFS=':'
+while read -r usr pswd uid gid uinfo hd csh
+do
+	echo "The user $usr"
+	echo "is part of the $gid"
+	echo "gang, lives in $hd"
+        echo "and rides $csh"
+        echo "$uid's place is protected by the passcode $pswd"
+        echo "more info about the user here: $uinfo"
+done < /etc/passwd
