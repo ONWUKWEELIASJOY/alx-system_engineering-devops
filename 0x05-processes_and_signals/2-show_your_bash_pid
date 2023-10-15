@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# A script that displays lines containing the bash word using the command in the previous file
-
-ps -auxf | grep bash

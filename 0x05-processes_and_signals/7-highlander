@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# A bash script displays 'To infinity and beyond' indefinitely
-
-trap 'echo "I am invincible!!!"' SIGTERM
-until false
-do
-    echo "To infinity and beyond"
-    sleep 2
-done
